@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import PlayerPreview from './PlayerPreview'
+
 export default class PlayerInput extends React.Component {
   constructor(props) {
     super(props)
@@ -24,6 +26,9 @@ export default class PlayerInput extends React.Component {
       username: event.target.value
     })
   }
+
+
+
   render() {
     return (
     <form className='column player' onSubmit={this.handleSubmit}>
